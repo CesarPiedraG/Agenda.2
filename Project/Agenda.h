@@ -89,12 +89,12 @@ void   Agenda_Delete( Agenda** this );
 void   Agenda_add_date( Agenda* this, Fecha data );
 void   Agenda_add_contact(Agenda* this, Contacto data );
 
-void   Agenda_Pop_front( SLL* this );
 
-bool   SLL_Is_empty( SLL* this );
-void   SLL_Make_empty( SLL* this );
+bool   Agenda_Is_empty( SLL* this );
+void   Agenda_Make_empty( SLL* this );
 
-bool   SLL_Find( SLL* this, int key );
+bool   Agenda_Find_fecha( SLL* this, int key );
+bool   Agenda_Find_contacto( SLL* this, int key );
 int    Print_Agenda( SLL* this );
 
 
